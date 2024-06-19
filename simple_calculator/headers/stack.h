@@ -10,11 +10,12 @@ class Stack {
         ~Stack(){}
         // Add item
         void push(char value);
-        // Removes last added item
-        void pop();
+        // Removes and returns last added value
+        char pop();
         // Get char that was last added to the stack
         char get_last();
         void print();
+        bool is_empty();
     private:
         vector<char> stack;
 };
